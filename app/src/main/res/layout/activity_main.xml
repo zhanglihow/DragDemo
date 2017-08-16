@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.sikan.dragdemo.DrawingView
+        android:id="@+id/drawing_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/hecheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="合成"/>
+
+
+
+
+    <RelativeLayout
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <Button
+            android:id="@+id/up_button"
+            android:text="↑"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_60"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"/>
+
+        <Button
+            android:id="@+id/right_button"
+            android:text="→"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/up_button"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"/>
+
+
+        <Button
+            android:id="@+id/left_button"
+            android:text="←"
+            android:layout_toLeftOf="@id/up_button"
+            android:layout_below="@id/up_button"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"/>
+        <Button
+            android:id="@+id/down_button"
+            android:layout_below="@id/left_button"
+            android:text="↓"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_60"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
